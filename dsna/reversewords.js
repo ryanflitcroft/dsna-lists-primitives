@@ -1,10 +1,10 @@
-const reverseMe = 'alchemy rocks gold';
-
 // INPUT: should take in a string of words
+// 'alchemy rocks gold';
 // OUTPUT: should return words in reverse order
 // 'ymehcla skcor dlog'
-function reverseWords(words) {
-  return words
+
+export default function reverseWords(sentence) {
+  return sentence
     .split(' ')
     .map((word) => {
       return word.split('').reverse().join('');
@@ -12,4 +12,4 @@ function reverseWords(words) {
     .join(' ');
 }
 
-console.log(reverseWords(reverseMe));
+// console.log(reverseWords('alchemy rocks gold'));

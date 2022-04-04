@@ -1,8 +1,8 @@
 // should take in a number
 // returns 'evenish' if number is even
-//returns 'oddish' if number is odd
+// returns 'oddish' if number is odd
 
-function oddishOrEvenish(num) {
+export default function oddishOrEvenish(num) {
   num
     .toString()
     .split('')
@@ -13,5 +13,5 @@ function oddishOrEvenish(num) {
   return num % 2 ? 'oddish' : 'evenish';
 }
 
-console.log(oddishOrEvenish(153));
-console.log(oddishOrEvenish(226));
+// console.log(oddishOrEvenish(153));
+// console.log(oddishOrEvenish(226));
